@@ -6,9 +6,9 @@ const Home = () => {
 
   return (
     <Grid container>
-      <Grid item xs={12}>
-        <Box position={breakPoint_810 ? "relative" : "absolute"} top={0} left={0} sx={{ height: breakPoint_810 ? "auto" : "100vh", width: "100%", zIndex: 9 }}>
-          <img src="/bg.jpg" alt="bg" style={{ height: "100%", width: "100%", opacity: 1 }} />
+      <Grid item xs={12} position="relative">
+        <Box position={breakPoint_810 ? "relative" : "absolute"} top={0} left={0} sx={{ height: breakPoint_810 ? "auto" : "100%", width: "100%", zIndex: 0 }}>
+          <img src="/bg.jpg" alt="bg" style={{ height: "100%", width: "100%" }} />
         </Box>
         <Box
           display="flex"
@@ -16,10 +16,10 @@ const Home = () => {
           alignItems="center"
           marginX={breakPoint_810 ? 0 : "auto"}
           paddingTop={breakPoint_810 ? 3 : 0}
-          sx={{ position: "relative", height: breakPoint_810 ? "auto" : "100vh", width: breakPoint_810 ? "100%" : "fit-content", zIndex: 10 }}
+          sx={{ position: "relative", height: breakPoint_810 ? "auto" : "100vh", width: breakPoint_810 ? "100%" : "40%", zIndex: 10 }}
         >
           <Stack spacing={3} width="100%" bgcolor="#eee" padding={breakPoint_810 ? 3 : 5} borderRadius={5}>
-            <Typography align="center" textTransform="uppercase" fontSize={breakPoint_810 ? 35 : 100} fontWeight="bold">
+            <Typography align="center" textTransform="uppercase" fontSize={breakPoint_810 ? 35 : 50} fontWeight="bold">
               Way to Net Zero
             </Typography>
             <Stack direction="row" spacing={2} justifyContent="center" alignItems="center">
